@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Requests | ComputerCare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">💻 ComputerCare</a>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="services.html">Services</a>
+        <a href="request.html">Request Computer</a>
+        <a class="active" href="myrequests.html">My Requests</a>
+        <a href="admin-login.html">Admin</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>My Requests</h1>
+    <p>Check the status of your computer appointments.</p>
+</section>
+
+<main class="section">
+    <form id="lookupForm" class="lookup-form">
+        <label for="lookupEmail">Enter the email used in your request</label>
+        <div class="lookup-row">
+            <input id="lookupEmail" type="email"
+                   placeholder="example@email.com" required>
+            <button class="btn" type="submit">Find Requests</button>
+        </div>
+    </form>
+
+    <div id="myRequestList" class="request-list">
+        <div class="empty-state">
+            <div class="big-icon">📋</div>
+            <h3>Find Your Appointments</h3>
+            <p>Enter your email above to see your requests and their statuses.</p>
+        </div>
+    </div>
+</main>
+
+<footer>© 2026 ComputerCare</footer>
+</body>
+</html>

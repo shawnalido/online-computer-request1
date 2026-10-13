@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Computer | ComputerCare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">💻 ComputerCare</a>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="request.html">Request Computer</a>
+        <a href="myrequests.html">My Requests</a>
+        <a href="admin-login.html">Admin</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Book a Computer Appointment</h1>
+    <p>Provide your details to submit your request for approval.</p>
+</section>
+
+<main class="form-section">
+    <form id="requestForm" class="form-card">
+        <h2>Appointment Form</h2>
+        <p class="muted">Please complete all fields.</p>
+
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text"
+               placeholder="Enter your full name" maxlength="100" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email"
+               placeholder="example@email.com" maxlength="150" required>
+
+        <label for="requestType">Request Type</label>
+        <select id="requestType" name="requestType" required>
+            <option value="">Select a service</option>
+            <option>Computer Unit</option>
+            <option>Laptop</option>
+            <option>Computer Repair</option>
+            <option>Software Installation</option>
+            <option>Computer Accessories</option>
+            <option>Other</option>
+        </select>
+
+        <label for="priority">Priority</label>
+        <select id="priority" name="priority" required>
+            <option value="">Select priority</option>
+            <option>Low</option>
+            <option>Normal</option>
+            <option>High</option>
+            <option>Urgent</option>
+        </select>
+
+        <label for="neededDate">Needed Date</label>
+        <input id="neededDate" name="neededDate" type="date" required>
+
+        <button class="btn full-width" type="submit">
+            Submit Appointment
+        </button>
+
+        <p id="formMessage" class="message" role="status"></p>
+    </form>
+</main>
+
+<footer>© 2026 ComputerCare</footer>
+</body>
+</html>
