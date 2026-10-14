@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | ComputerCare</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="admin-navbar">
+    <a class="admin-logo" href="admin-dashboard.html">
+        💻 ComputerCare Admin
+    </a>
+    <a class="logout-btn" href="admin-login.html">Back to Login ↗</a>
+</header>
+
+<main class="admin-main">
+    <div class="admin-heading">
+        <div>
+            <span class="admin-eyebrow">ADMINISTRATION</span>
+            <h1>Appointment Dashboard</h1>
+            <p>Review client requests and manage their appointment status.</p>
+        </div>
+    </div>
+
+    <section class="stats-grid">
+        <article class="stat-card">
+            <span>Total Appointments</span>
+            <strong id="totalCount">0</strong>
+        </article>
+        <article class="stat-card">
+            <span>Pending</span>
+            <strong id="pendingCount">0</strong>
+        </article>
+        <article class="stat-card">
+            <span>Approved</span>
+            <strong id="approvedCount">0</strong>
+        </article>
+        <article class="stat-card">
+            <span>Denied</span>
+            <strong id="deniedCount">0</strong>
+        </article>
+    </section>
+
+    <section class="appointments-panel">
+        <div class="panel-heading">
+            <div>
+                <h2>Client Appointments</h2>
+                <p>Approve or deny each pending request.</p>
+            </div>
+
+            <select id="statusFilter" aria-label="Filter by status">
+                <option value="All">All Appointments</option>
+                <option value="Pending">Pending</option>
+                <option value="Approved">Approved</option>
+                <option value="Denied">Denied</option>
+            </select>
+        </div>
+
+        <div id="adminAppointmentList">
+            <div class="empty-state"><h3>No appointments to display</h3><p>This HTML/CSS-only demo does not load or manage submitted requests.</p></div>
+        </div>
+    </section>
+</main>
+
+<footer class="admin-footer">ComputerCare Administration</footer>
+</body>
+</html>
